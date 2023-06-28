@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internship task</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+
+    .container {
+      background-color: yellow;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container h1 {
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: 20px 0;
+      color: #fff;
+    }
+
+    .smiley {
+      width: 100px;
+      height: 100px;
+      top: 30px;
+      background-color: rgba(47, 47, 46, 0.786);
+      border-radius: 50%;
+      border: 3px solid rgba(47, 47, 46, 0);
+      position: relative;
+    }
+
+    .smiley:before,
+    .smiley:after {
+      content: "";
+      position: absolute;
+      background-color: black;
+    }
+
+    .smiley:before {
+      width: 10px;
+      height: 10px;
+      top: 30px;
+      left: 35px;
+    }
+
+    .smiley:after {
+      width: 10px;
+      height: 10px;
+      bottom: 30px;
+      left: 35px;
+    }
+
+    .smile {
+        width: 4px;
+      height: 60px;
+      background-color: black;
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      transform-origin: top left;
+      border: 2px solid black;
+      border-top-left-radius: 50px 40px;
+      border-top-right-radius: 50px 40px;
+      border-radius: 10px;
+    }
+    
+
+    .footer {
+      background-color: rgb(134, 24, 24);
+      height: 100px;
+      position: relative;
+    }
+
+    .dent {
+      width: 0;
+      height: 0;
+      border-top: 50px solid yellow;
+      border-left: 120px solid transparent;
+      border-right:120px solid transparent;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pinak Idea Lab</h1>
+    <div class="smiley">
+      <div class="smile"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="dent"></div>
+  </div>
+</body>
+</html>
